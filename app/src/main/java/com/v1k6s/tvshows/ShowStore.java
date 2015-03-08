@@ -16,8 +16,6 @@ import android.util.Log;
 
 import android.content.Context;
 
-import java.util.UUID;
-
 class ShowStore {
     final static String TAG = "ShowStore";
     final static String FILE_NAME = "shows";
@@ -32,7 +30,7 @@ class ShowStore {
             InputStream in = c.openFileInput(FILE_NAME);
             reader = new BufferedReader(new InputStreamReader(in));
             StringBuilder jsonString = new StringBuilder();
-            String line = null;
+            String line;
             while ((line = reader.readLine()) != null) {
                 jsonString.append(line);
             }
