@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="14dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="14dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Season "
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/dialog_se_season_button_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prev"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/dialog_se_season_button"
+            android:layout_toStartOf="@+id/dialog_se_season_button" />
+
+        <Button
+            android:id="@+id/dialog_se_season_button"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginRight="-8dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/dialog_se_season_button_next"
+            android:layout_toStartOf="@+id/dialog_se_season_button_next" />
+
+        <Button
+            android:id="@+id/dialog_se_season_button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="false"  />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Episode "
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/dialog_se_episode_button_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prev"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/dialog_se_episode_button"
+            android:layout_toStartOf="@+id/dialog_se_episode_button" />
+
+        <Button
+            android:id="@+id/dialog_se_episode_button"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginRight="-8dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/dialog_se_episode_button_next"
+            android:layout_toStartOf="@+id/dialog_se_episode_button_next" />
+
+        <Button
+            android:id="@+id/dialog_se_episode_button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Next"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="false" />
+
+    </RelativeLayout>
+
+</LinearLayout>
